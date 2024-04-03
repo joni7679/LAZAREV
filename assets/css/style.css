@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.main {
+    width: 100%;
+}
+
+/*------------navbar section start here -----------*/
+nav {
+    width: 100%;
+    height: 13vh;
+    position: fixed;
+    color: #fff;
+    padding: 2vw 8vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #111;
+    z-index: 11;
+
+}
+
+nav h4 a {
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.nav-part-2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 2vw;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-elem h5 {
+    text-transform: capitalize;
+    margin-top: 7px;
+}
+
+.nav-elem span {
+    display: inline-block;
+    transform: translateY(25px);
+    /* background-color: red; */
+}
+
+.logo {
+    text-transform: uppercase;
+}
+
+.logo h1 {
+    font-weight: 900;
+}
+
+.talk-btn {
+    padding: 10px 10px;
+    border-radius: 19px;
+    background: #0DA34E;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.talk-btn svg {
+    width: 20px;
+}
+
+
+
+.nav-elem h5 {
+    font-size: 1vw;
+    margin-top: 15px;
+    overflow: hidden;
+    display: none;
+}
+
+.nav-bottom {
+    border-bottom: 1px solid #dadada;
+    width: 86%;
+
+    bottom: 0;
+    top: 100%;
+    position: absolute;
+    height: 0vh;
+    transition: all 0.4s;
+    background-color: #111;
+    z-index: 8;
+}
+
+
+
+.nav-btm-part h5 {
+    margin-top: 10px;
+}
+
+.nav-btm-part h5 span {
+    font-size: 0.85vw;
+    font-weight: 500;
+    display: inline-block;
+    opacity: 0;
+}
+
+
+/*------------navbar section end here -----------*/
+
+/*------------hero section start here -----------*/
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.hero-section h1 {
+    text-transform: uppercase;
+    font-size: 8vw;
+    font-weight: 900;
+    line-height: 8vw;
+}
+
+.hero-section h1 span svg {
+    width: 6vw;
+    height: 6vw;
+    background: #0DA34E;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s;
+
+}
+
+.hero-section h1 span svg:hover {
+    transform: rotate(-82deg);
+    width: 5vw;
+    height: 5vw;
+    transition: all 0.4s;
+
+}
+
+.hero-section p {
+    font-size: 2vw;
+    margin-top: 30px;
+}
+
+.hero-bottm-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+.btn {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 19px;
+}
+
+.btn:nth-child(3) {
+    border: none;
+}
+
+.moving-div {
+    position: absolute;
+    bottom: 3px;
+    /* z-index: 3; */
+    white-space: nowrap;
+    /* Corrected property value */
+    width: 40%;
+    /* background-color: red; */
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+.moving-div .move {
+    display: inline-block;
+    animation: slide 8s linear infinite;
+
+
+}
+
+.moving-div .move img {
+    height: 1vw;
+    margin: 0 1vw;
+    /* display: inline-block; */
+}
+
+.blur-left {
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(to right, #111, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+.blur-right {
+    width: 20%;
+    height: 100%;
+    /* background-color: red; */
+    background: linear-gradient(to right, transparent, #111);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*------------hero section end here -----------*/
+
+/*------------container news section start here -----------*/
+
+.container-news-section {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(16, 16, 16);
+    position: relative;
+    display: flex;
+    padding: 2vw 10vw;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+}
+
+.left-part {
+    width: 40%;
+    height: 100%;
+    background-color: #0DA34E;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.left-part h4 {
+    padding: 14px;
+}
+
+.left-part p {
+    font-size: 1.5vw;
+    padding: 23px;
+}
+
+.right-part {
+    width: 50%;
+    height: 100%;
+    background-color: #6cf4a7;
+
+    /* background-color: #cbd6345; */
+}
+
+/*------------container news  section end here -----------*/
