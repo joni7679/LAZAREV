@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     color: #fff;
+    font-family: NeueHaasDisplay;
+
+}
+
+
+@font-face {
+    font-family: NeueHaasDisplay;
+    src: url(../fonts/NeueHaasDisplayThin.ttf);
 }
 
 .main {
@@ -236,7 +244,7 @@ nav h4 a {
 
 .container-news-section {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: rgb(16, 16, 16);
     position: relative;
     display: flex;
@@ -249,7 +257,7 @@ nav h4 a {
 .left-part {
     width: 40%;
     height: 100%;
-    background-color: #0DA34E;
+    /* background-color: #0DA34E; */
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -263,14 +271,54 @@ nav h4 a {
 .left-part p {
     font-size: 1.5vw;
     padding: 23px;
+    width: 75%;
 }
 
 .right-part {
     width: 50%;
     height: 100%;
-    background-color: #6cf4a7;
+    /* background-color: #6cf4a7; */
 
     /* background-color: #cbd6345; */
+}
+
+.right-elem {
+    width: 100%;
+    /* height: 20%; */
+    /* padding: 20px; */
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+    text-transform: capitalize;
+    position: relative;
+    /* background-color: red; */
+    /* padding: 20px 8px; */
+    border-bottom: 1px solid #333;
+}
+
+.right-elem h2 {
+    z-index: 8;
+    width: 51%;
+}
+
+.right-elem img {
+    width: 7.5vw;
+    height: 7.5vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    scale: 0;
+    transition: all 0.5s;
+}
+
+.right-elem svg {
+    width: 1vw;
+}
+
+.sem-elem p{
+    color: #565554;
 }
 
 /*------------container news  section end here -----------*/
