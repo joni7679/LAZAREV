@@ -47,31 +47,34 @@ function navBarAnimation() {
 }
 
 navBarAnimation()
+function imgcursorEffect() {
+    let rightElem = document.querySelectorAll(".right-elem");
+    console.log(rightElem)
+    rightElem.forEach((elem) => {
+        console.log(elem.childNodes[3])
+        let imges = elem.childNodes[3]
+        elem.addEventListener("mouseenter", function () {
+            console.log(elem.getBoundingClientRect().y)
+            imges.style.opacity = 1;
+            imges.style.scale = 1;
+        })
 
-let rightElem = document.querySelectorAll(".right-elem");
-console.log(rightElem)
-rightElem.forEach((elem) => {
-    console.log(elem.childNodes[3])
-    let imges = elem.childNodes[3]
-    elem.addEventListener("mouseenter", function () {
-        console.log(elem.getBoundingClientRect().y)
-        imges.style.opacity = 1;
-        imges.style.scale = 1;
-    })
-
-    elem.addEventListener("mouseleave", function () {
-        imges.style.opacity = 0;
-        imges.style.scale = 0;
-    })
+        elem.addEventListener("mouseleave", function () {
+            imges.style.opacity = 0;
+            imges.style.scale = 0;
+        })
 
 
-    elem.addEventListener("mousemove", (dets) => {
-        // console.log(dets)
-        gsap.to(imges, {
-            x: dets.x-elem.getBoundingClientRect().x,
-            y: dets.y-elem.getBoundingClientRect().y,
+        elem.addEventListener("mousemove", (dets) => {
+            // console.log(dets)
+            gsap.to(imges, {
+                x: dets.x - elem.getBoundingClientRect().x,
+                y: dets.y - elem.getBoundingClientRect().y,
+            })
+
         })
 
     })
+}
 
-})
+imgcursorEffect()
