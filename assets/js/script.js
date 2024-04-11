@@ -49,9 +49,9 @@ function navBarAnimation() {
 navBarAnimation()
 function imgcursorEffect() {
     let rightElem = document.querySelectorAll(".right-elem");
-    console.log(rightElem)
+    // console.log(rightElem)
     rightElem.forEach((elem) => {
-        console.log(elem.childNodes[3])
+        // console.log(elem.childNodes[3])
         let imges = elem.childNodes[3]
         elem.addEventListener("mouseenter", function () {
             console.log(elem.getBoundingClientRect().y)
@@ -68,8 +68,8 @@ function imgcursorEffect() {
         elem.addEventListener("mousemove", (dets) => {
             // console.log(dets)
             gsap.to(imges, {
-                x: dets.x - elem.getBoundingClientRect().x,
-                y: dets.y - elem.getBoundingClientRect().y,
+                x: dets.x - elem.getBoundingClientRect().x - 90,
+                y: dets.y - elem.getBoundingClientRect().y - 20,
             })
 
         })
@@ -78,3 +78,26 @@ function imgcursorEffect() {
 }
 
 imgcursorEffect()
+
+
+let reelCenter = document.querySelector(".reel-center");
+let video = document.querySelector(".reel-center video");
+console.log(reelCenter)
+reelCenter.addEventListener("click", () => {
+    video.play();
+    gsap.to(video, {
+        transform: "scaleX(1) scaleY(1)",
+        opacity:1,
+        borderRadius: 0,
+    })
+})
+
+video.addEventListener("click", () => {
+    console.log("hello joni");
+    video.pause();
+    gsap.to(video, {
+        transform: "scaleX(0.7) scaleY(0.2)",
+        opacity:0,
+        borderRadius:"30px",
+    })
+})
