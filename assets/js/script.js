@@ -45,8 +45,8 @@ function navBarAnimation() {
 
     })
 }
+// navBarAnimation()
 
-navBarAnimation()
 function imgcursorEffect() {
     let rightElem = document.querySelectorAll(".right-elem");
     // console.log(rightElem)
@@ -76,28 +76,59 @@ function imgcursorEffect() {
 
     })
 }
-
 imgcursorEffect()
 
 
 let reelCenter = document.querySelector(".reel-center");
 let video = document.querySelector(".reel-center video");
-console.log(reelCenter)
 reelCenter.addEventListener("click", () => {
     video.play();
     gsap.to(video, {
         transform: "scaleX(1) scaleY(1)",
-        opacity:1,
+        opacity: 1,
         borderRadius: 0,
     })
 })
 
 video.addEventListener("click", () => {
-    console.log("hello joni");
     video.pause();
     gsap.to(video, {
         transform: "scaleX(0.7) scaleY(0.2)",
-        opacity:0,
-        borderRadius:"30px",
+        opacity: 0,
+        borderRadius: "30px",
     })
 })
+
+
+// slove korte hobe video section ta ke 
+function customcursorEffect() {
+    let sections = document.querySelectorAll(".sec-right-part");
+    let customcursor = document.querySelectorAll(".cursor-div")
+
+    sections.forEach((elem) => {
+        console.log(elem)
+
+        elem.addEventListener("mouseenter", () => {
+            // console.log(elem.childNodes[5])
+            elem.childNodes[5].style.opacity = 1;
+            elem.childNodes[5].play();
+
+
+        })
+
+        elem.addEventListener("mouseleave", () => {
+            console.log(elem.childNodes[5])
+            elem.childNodes[5].style.opacity = 0;
+            elem.childNodes[5].load();
+
+
+        })
+
+
+    })
+
+
+
+}
+
+customcursorEffect()

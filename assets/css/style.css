@@ -2,19 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
     font-family: NeueHaasDisplay;
 
 }
 
-/* 
+
 @font-face {
     font-family: NeueHaasDisplay;
     src: url(../fonts/NeueHaasDisplayThin.ttf);
-} */
+}
 
 .main {
     width: 100%;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /*------------navbar section start here -----------*/
@@ -35,6 +38,8 @@ nav {
 nav h4 a {
     text-decoration: none;
     font-size: 1vw;
+    color: #fff;
+
 }
 
 .nav-part-2 {
@@ -54,13 +59,18 @@ nav h4 a {
     display: inline-block;
     transform: translateY(25px);
     /* background-color: red; */
+    color: #fff;
+
 }
 
 .logo {
     text-transform: uppercase;
+    color: #fff;
+
 }
 
 .logo h1 {
+    color: #fff;
     font-weight: 900;
 }
 
@@ -75,6 +85,8 @@ nav h4 a {
     align-items: center;
     gap: 7px;
     cursor: pointer;
+    color: #fff;
+
 }
 
 .talk-btn svg {
@@ -88,11 +100,14 @@ nav h4 a {
     margin-top: 15px;
     overflow: hidden;
     display: none;
+    color: #fff;
+
 }
 
 .nav-bottom {
     border-bottom: 1px solid #dadada;
     width: 86%;
+    color: #fff;
 
     bottom: 0;
     top: 100%;
@@ -107,6 +122,8 @@ nav h4 a {
 
 .nav-btm-part h5 {
     margin-top: 10px;
+    color: #fff;
+
 }
 
 .nav-btm-part h5 span {
@@ -114,6 +131,9 @@ nav h4 a {
     font-weight: 500;
     display: inline-block;
     opacity: 0;
+    color: #fff;
+
+
 }
 
 
@@ -130,6 +150,7 @@ nav h4 a {
     justify-content: center;
     flex-direction: column;
     position: relative;
+    color: #fff;
 
 }
 
@@ -138,6 +159,8 @@ nav h4 a {
     font-size: 8vw;
     font-weight: 900;
     line-height: 8vw;
+    color: #fff;
+
 }
 
 .hero-section h1 span svg {
@@ -147,6 +170,7 @@ nav h4 a {
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.4s;
+    color: #fff;
 
 }
 
@@ -252,6 +276,7 @@ nav h4 a {
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid #333;
+    color: #fff;
 }
 
 .left-part {
@@ -393,3 +418,191 @@ nav h4 a {
 }
 
 /*------------reel section end here -----------*/
+
+/*------------page4 start here -----------*/
+
+.page4 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page4 .right-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.page4 .left-part,
+.page4 .right-part {
+    margin-top: 5rem;
+    padding: 13px;
+}
+
+.page4 .left-part h3 {
+    font-size: 4vw;
+    font-weight: 900;
+}
+
+.page4 .right-part h4 {
+    letter-spacing: 4px;
+}
+
+.right-val p {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.right-val:nth-child(2) {
+    margin-top: 30px;
+}
+
+/*------------page4 end here -----------*/
+
+/*------------pricing section start here -----------*/
+
+.pricing-section {
+    width: 100%;
+    /* height: 100vh; */
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pricing-div {
+    width: 300px;
+    height: 300px;
+    background-color: #f5f5f5;
+    padding: 15px;
+    text-transform: capitalize;
+    border-radius: 7px;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.pricing-div h3 {
+    font-size: 2rem;
+}
+
+.pricing-div p {
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.gray-text {
+    color: #968e8e;
+}
+
+/*------------pricing section  end here -----------*/
+
+/*------------demo section  start here -----------*/
+
+.our-demo-section {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    padding: 0 10%;
+}
+
+.our-demo-section h3 {
+    position: absolute;
+    right: 55px;
+    top: 10px;
+    width: 50%;
+    font-size: 2vw;
+}
+
+/*------------demo section  end here -----------*/
+
+/*------------ section  start here -----------*/
+.section {
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90vh;
+}
+
+#sec-section{
+    margin-top: 90px;
+}
+
+
+.sec-left-part {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+
+.sec-right-part {
+    width: 600px;
+    height: 400px;
+    position: relative;
+}
+
+.sec-right-part img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.sec-tittle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 10px;
+    border-top: 1px solid gray;
+}
+
+.sec-tittle svg {
+    width: 10px;
+}
+
+.sec-left-part p {
+    margin-top: 40px;
+}
+
+.cursor-div {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(110, 110, 241);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    cursor: pointer;
+    opacity: 0;
+    scale: 0;
+    transition: all 0.5s;
+    /* transform: translate(-50%,-50%); */
+}
+
+.sec-right-part video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/*------------pika-ai section  end here -----------*/
