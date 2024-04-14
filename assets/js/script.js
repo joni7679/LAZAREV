@@ -1,4 +1,8 @@
 
+const scroll = new LocomotiveScroll({
+    el: document.querySelector(".main"),
+    smooth: true,
+})
 function navBarAnimation() {
     let navBar = document.querySelector("nav");
     navBar.addEventListener("mouseenter", () => {

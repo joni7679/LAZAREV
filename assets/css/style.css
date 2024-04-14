@@ -17,7 +17,7 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /*------------navbar section start here -----------*/
@@ -192,7 +192,7 @@ nav h4 a {
     align-items: center;
     justify-content: center;
     gap: 16px;
-
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -323,6 +323,7 @@ nav h4 a {
 .right-elem h2 {
     z-index: 8;
     width: 51%;
+    font-size: 1.5rem;
 }
 
 .right-elem img {
@@ -536,7 +537,7 @@ nav h4 a {
     min-height: 90vh;
 }
 
-#sec-section{
+#sec-section {
     margin-top: 90px;
 }
 
@@ -595,7 +596,7 @@ nav h4 a {
     /* transform: translate(-50%,-50%); */
 }
 
-.sec-right-part video{
+.sec-right-part video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -605,4 +606,103 @@ nav h4 a {
     opacity: 0;
 }
 
-/*------------pika-ai section  end here -----------*/
+/*------------ section  end here -----------*/
+
+.page7 {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: red; */
+    padding-left: 32%;
+
+
+
+}
+
+.page7-right-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.box,
+.box2 {
+    width: 350px;
+    position: relative;
+    min-height: 400px;
+    /* background-color: yellow; */
+    overflow: hidden;
+}
+
+.box p,
+.box2 p {
+    margin-bottom: 25px;
+}
+
+.box h3,
+.box2 h3 {
+    padding: 14px 0;
+}
+
+.box img,
+.box2 img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+}
+
+.box .video-player-div {
+
+    background: red;
+    width: 100%;
+    height: 357px;
+    position: absolute;
+    transition: all 0.4s;
+}
+
+.box:hover .video-player-div {
+    opacity: 1;
+    bottom: -11%;
+    transition: all 0.4s;
+}
+
+/*  */
+
+
+.box2 video {
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.box2:hover video {
+    transition: all 0.5s;
+    opacity: 1;
+    top: -1px;
+}
+
+.page8 {
+    width: 100%;
+    height: 100vh;
+    background-color: yellowgreen;
+}
+
+
+/* responsive css */
+
+@media (max-width:750px) {
+
+    .section,
+    .page7-right-part,
+    .container-news-section,
+    .page4 {
+        flex-direction: column;
+    }
+
+    .left-part {
+        width: 100%;
+    }
+}
