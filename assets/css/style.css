@@ -17,7 +17,7 @@
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /*------------navbar section start here -----------*/
@@ -687,13 +687,72 @@ nav h4 a {
 .page8 {
     width: 100%;
     height: 100vh;
-    background-color: yellowgreen;
+    background-color: rgb(19, 19, 19);
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2vw;
 }
 
+.page8 .btn {
+    /* position: absolute; */
+    background-color: #1fa964;
+    padding: 1vw 2.5vw;
+    font-size: 2vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.page8-right {
+    width: 70%;
+    color: #fff;
+}
+
+.page8-right p {
+    font-size: 2vw;
+}
+
+.page8-right p span {
+    display: inline-block;
+    width: 2vw;
+    background-color: red;
+}
+
+.page8-content {
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.btn-grp {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 17px;
+    flex-wrap: wrap;
+}
+
+.btn-grp button {
+    padding: 1vw 2vw;
+    border-radius: 29px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
 
 /* responsive css */
 
 @media (max-width:750px) {
+    .moving-div .move img {
+        height: 2vw;
+    }
+
 
     .section,
     .page7-right-part,
@@ -702,7 +761,62 @@ nav h4 a {
         flex-direction: column;
     }
 
+    .page4 .left-part {
+        height: 150px;
+    }
+
     .left-part {
         width: 100%;
+        height: 200px;
     }
+
+    .page7 {
+        padding-left: 0;
+    }
+
+    .page8 {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:700px) {
+    .page4 .right-part h4 {
+        width: 400px;
+    }
+
+}
+
+@media (max-width:500px) {
+    .sec-right-part {
+        width: 330px;
+        height: 296px;
+    }
+
+}
+
+@media (max-width:550px) {
+    .page4 .right-part h4 {
+        width: 250px;
+
+    }
+
+    .right-elem .flex {
+        flex-direction: column;
+    }
+
+    .right-elem .flex h2 {
+        width: 300px;
+    }
+
+}
+
+@media (max-width:400px) {
+    .sec-left-part {
+        width: 250px;
+    }
+
+    .sec-left-part p {
+        margin-top: 20px;
+    }
+
 }
