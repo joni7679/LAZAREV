@@ -49,7 +49,7 @@ function navBarAnimation() {
 
     })
 }
-// navBarAnimation()
+navBarAnimation()
 
 function imgcursorEffect() {
     let rightElem = document.querySelectorAll(".right-elem");
